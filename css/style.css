@@ -18,7 +18,7 @@ body {
 
 /* Container with the background image */
 .container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./imgs/fundo2.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./imgs/fundo2.jpg') no-repeat center center/cover;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -58,7 +58,7 @@ figcaption {
   cursor: pointer;
 }
 
-.hr_aranha, .hr_capitao, .hr_ferro, .hr_hulk, .hr_thor, .vl_caveira, .vl_chicote, .vl_fantasma, .vl_soldado, .vl_thanos, .vl_ultron {
+.hr_aranha, .hr_capitao, .hr_ferro, .hr_hulk, .hr_thor, .hr_pantera, .hr_jessica, .hr_gavião, .hr_formiga, .hr_falcao, .hr_vespa, .hr_lua, .hr_visao, .hr_marvel, .hr_demolidor, .vl_caveira, .vl_chicote, .vl_fantasma, .vl_soldado, .vl_thanos, .vl_ultron, .vl_Duende, .vl_crime, .vl_mysterio, .vl_killmonger, .vl_magneto, .vl_abominável, .vl_madame {
   margin-inline: 1rem;
   img {
       width: 6rem;
@@ -78,12 +78,6 @@ figcaption {
   transform: translateY(4px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   filter: brightness(0.97);
-}
-
-.resultado {
-  background-color: #4F4F4F;
-  margin-inline: 1rem;
-  font-size: medium;
 }
 
 /* Button Styles */

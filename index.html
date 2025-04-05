@@ -10,38 +10,81 @@
     <body>
       <img class="logo" src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo da Imersão Dev">
 
-        <div class="container">
-          <div class="titulo">
-            <h2>Força ou Queda</h2>
-          </div>
-        
+        <div class="container">    
           <main class="conteudo-jogo">
             <div id="container" class="interface">
-              <h2 id="sub_titulo">Escolha 3 heróis para seu time:</h2>
-              <div id="herois" class="jogadores">
-                <div class="hr_capitao" id="Capitão América" onclick="escolha('Capitão América')">
+              <div id="inicial">
+                <h2>Batalha Épica da Marvel:</h2>
+                <p>Escolha Seu Herói e Entre no Combate!</p>
+                <button onclick="inicia()">Jogue Agora</button>
+              </div>
+              <h2 id="sub_titulo" style="display: none;">Escolha 3 heróis para seu time:</h2>
+              <div id="herois" class="jogadores" style="display: none;">
+                <div class="hr_capitao" id="Capitão América" onclick="escolha('Capitão América')" style="display: none;">
                   <img src="css/imgs/herois/capitao_america.jpeg" alt="Capitão America" class="imagem-clicavel" alt="Imagem clicável">
                   <figcaption>Capitão América</figcaption>
                 </div>
-                <div class="hr_aranha" id="Homem Aranha" onclick="escolha('Homem Aranha')">
+                <div class="hr_aranha" id="Homem Aranha" onclick="escolha('Homem Aranha')" style="display: none;">
                   <img src="css/imgs/herois/homem_aranha.jpg" alt="Homem Aranha" class="imagem-clicavel" alt="Imagem clicável">
                   <figcaption>Homem Aranha</figcaption>
                 </div>
-                <div class="hr_ferro" id="Homem de Ferro" onclick="escolha('Homem de Ferro')">
+                <div class="hr_ferro" id="Homem de Ferro" onclick="escolha('Homem de Ferro')" style="display: none;">
                   <img src="css/imgs/herois/homem_ferro.jpeg" alt="Homem de Ferro" class="imagem-clicavel" alt="Imagem clicável">
                   <figcaption>Homem de Ferro</figcaption>
                 </div>
-                <div class="hr_hulk" id="Hulk" onclick="escolha('Hulk')">
+                <div class="hr_hulk" id="Hulk" onclick="escolha('Hulk')" style="display: none;">
                   <img src="css/imgs/herois/hulk.jpeg" alt="Hulk" class="imagem-clicavel" alt="Imagem clicável">
                   <figcaption>Hulk</figcaption>
                 </div>
-                <div class="hr_thor" id="Thor" onclick="escolha('Thor')">
+                <div class="hr_thor" id="Thor" onclick="escolha('Thor')" style="display: none;">
                   <img src="css/imgs/herois/Thor-Ragnarok.jpg" alt="Thor" class="imagem-clicavel" alt="Imagem clicável">
                   <figcaption>Thor</figcaption>
                 </div>
+              <!-- 2º -->
+                <div class="hr_pantera" id="Pantera Negra" onclick="escolha('Pantera Negra')" style="display: none;">
+                  <img src="css/imgs/herois/pantera_negra.jpg" alt="Pantera Negra" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Pantera Negra</figcaption>
+                </div>
+                <div class="hr_jessica" id="Jessica Jones" onclick="escolha('Jessica Jones')" style="display: none;">
+                  <img src="css/imgs/herois/jessica_jones.jpg" alt="Jéssica Jones" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Jéssica Jones</figcaption>
+                </div>
+                <div class="hr_gavião" id="Gavião Arqueiro" onclick="escolha('Gavião Arqueiro')" style="display: none;">
+                  <img src="css/imgs/herois/gaviao_arqueiro.jpg" alt="Gavião Arqueiro" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Gavião Arqueiro</figcaption>
+                </div>
+                <div class="hr_formiga" id="Homem Formiga" onclick="escolha('Homem Formiga')" style="display: none;">
+                  <img src="css/imgs/herois/homem_formiga.jpg" alt="Homem Formiga" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Homem Formiga</figcaption>
+                </div>
+                <div class="hr_falcao" id="Falcão" onclick="escolha('Falcão')" style="display: none;">
+                  <img src="css/imgs/herois/falcao.jpg" alt="Falcão" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Falcão</figcaption>
+                </div>
+                <!-- 3º -->
+                <div class="hr_vespa" id="Vespa" onclick="escolha('Vespa')" style="display: none;">
+                  <img src="css/imgs/herois/vespa.jpg" alt="Vespa" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Vespa</figcaption>
+                </div>
+                <div class="hr_lua" id="Cavaleiro da Lua" onclick="escolha('Cavaleiro da Lua')" style="display: none;">
+                  <img src="css/imgs/herois/cavaleiro_da_lua.jpg" alt="Cavaleiro da Lua" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Cavaleiro da Lua</figcaption>
+                </div>
+                <div class="hr_visao" id="Visão" onclick="escolha('Visão')" style="display: none;">
+                  <img src="css/imgs/herois/visao.jpg" alt="Visão" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Visão</figcaption>
+                </div>
+                <div class="hr_marvel" id="Ms. Marvel" onclick="escolha('Ms. Marvel')" style="display: none;">
+                  <img src="css/imgs/herois/ms_marvel.jpeg" alt="Ms. Marvel" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Ms. Marvel</figcaption>
+                </div>
+                <div class="hr_demolidor" id="Demolidor" onclick="escolha('Demolidor')" style="display: none;">
+                  <img src="css/imgs/herois/demolidor.jpeg" alt="Demolidor" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Demolidor</figcaption>
+                </div>
               </div>
               <p id="vs" style="display: none; font-size: 1.5rem;">🆚</p>
-              <div id="viloes" style="display: none;">
+              <div id="viloes" class="viloes" style="display: none;">
                 <div class="vl_caveira" id="Caveira Vermelha" style="display: none;">
                   <img src="css/imgs/viloes/caveira_vermelha.jpeg" alt="Caveira Vermelha">
                   <figcaption>Caveira Vermelha</figcaption>
@@ -50,7 +93,7 @@
                   <img src="css/imgs/viloes/chicote_negro.jpg" alt="Chicote Negro">
                   <figcaption>Chicote Negro</figcaption>
                 </div>
-                <div class="vl_fantasma" id="Fantasmas" style="display: none;">
+                <div class="vl_fantasma" id="Fantasma" style="display: none;">
                   <img src="css/imgs/viloes/fantasma.jpeg" alt="Fantasma">
                   <figcaption>Fantasma</figcaption>
                 </div>
@@ -66,12 +109,35 @@
                   <img src="css/imgs/viloes/ultron.jpeg" alt="Ultron">
                   <figcaption>Ultron</figcaption>
                 </div>
+                <div class="vl_Duende" id="Duende Verde" style="display: none;">
+                  <img src="css/imgs/viloes/duende_verde.jpg" alt="Duende Verde">
+                  <figcaption>Duende Verde</figcaption>
+                </div>
+                <div class="vl_crime" id="Rei do Crime" style="display: none;">
+                  <img src="css/imgs/viloes/rei_do_crime.jpg" alt="Rei do Crime">
+                  <figcaption>Rei do Crime</figcaption>
+                </div>
+                <div class="vl_mysterio" id="Mysterio" style="display: none;">
+                  <img src="css/imgs/viloes/mysterio.jpg" alt="Mysterio">
+                  <figcaption>Mysterio</figcaption>
+                </div>
+                <div class="vl_killmonger" id="Killmonger" style="display: none;">
+                  <img src="css/imgs/viloes/killmonger.jpg" alt="killmonger">
+                  <figcaption>killmonger</figcaption>
+                </div>
+                <div class="vl_magneto" id="Magneto" style="display: none;">
+                  <img src="css/imgs/viloes/magneto.jpg" alt="magneto">
+                  <figcaption>magneto</figcaption>
+                </div>
+                <div class="vl_abominável" id="Abominável" style="display: none;">
+                  <img src="css/imgs/viloes/abominável.jpeg" alt="abominável">
+                  <figcaption>abominável</figcaption>
+                </div>
+                <div class="vl_madame" id="Madame da Hidra" style="display: none;">
+                  <img src="css/imgs/viloes/madame_hidra.jpg" alt="Madame Hidra">
+                  <figcaption>Madame Hidra</figcaption>
+                </div>
               </div>
-
-              <p id="informacoesJogador" class="resultado"></p>
-              <p id="informacoesComputador" class="resultado"></p>
-              <button id="resultadoBtn" style="display:none;">Ver Resultado</button>
-              <h1 id="resultadoFinal" class="resultado"></h1>
           </main>
         </div>
         <footer>
