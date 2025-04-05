@@ -58,7 +58,7 @@ figcaption {
   cursor: pointer;
 }
 
-.hr_aranha, .hr_capitao, .hr_ferro, .hr_hulk, .hr_thor, .hr_pantera, .hr_jessica, .hr_gavião, .hr_formiga, .hr_falcao, .hr_vespa, .hr_lua, .hr_visao, .hr_marvel, .hr_demolidor, .vl_caveira, .vl_chicote, .vl_fantasma, .vl_soldado, .vl_thanos, .vl_ultron, .vl_Duende, .vl_crime, .vl_mysterio, .vl_killmonger, .vl_magneto, .vl_abominável, .vl_madame {
+.jogador, .vilao{
   margin-inline: 1rem;
   img {
       width: 6rem;
@@ -127,25 +127,36 @@ footer { display: flex;
   cursor: pointer; 
 }
 
-@media screen and (max-width: 400px){
-  .content {
-      width: 9rem;
+@media screen and (max-width: 450px){
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
-  .jogo {
-      width: 95%;
-      .opcao {
-          width: 80px;
-          height: 80px;
-          img {
-              width: 100%;
-              height: 100%;
-          }
+
+  .container {
+    flex: 0.5; /* Faz com que o container ocupe o espaço restante */
+    padding-top: 30px;
+    padding-bottom: 60px; /* Adicione padding igual à altura do footer */
+  }
+
+  .interface {
+    width: 200px;
+    .jogador, .vilao{
+      img {
+        width: 7rem;
+        height: 6rem;
       }
-      .resultado {
-          margin: 0.5rem 1rem 0px 1rem
-      }
-   }
-   footer {
+    }
+  }
+  .jogadores, .viloes {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  footer {
+    height: 20px; /* Defina a altura do footer */
+    position: relative; /* Garante que o footer esteja no fluxo normal do documento */
     gap: 0.1rem;
     .texto {
       align-self: flex-end;
@@ -156,7 +167,7 @@ footer { display: flex;
       width: 10;
     }
     .linkedin { 
-    margin-left: 0rem; 
+      margin-left: 0rem; 
     } 
   }
 }
