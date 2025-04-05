@@ -22,6 +22,13 @@ const viloesMarvel = {
     "Soldado Invernal": 820,
 };
 
+function recarregarPagina() {
+  location.reload(); // Recarrega a página
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 // Fazer um append, e faz um if dentro da função para verificar se esse item já está na lista, se tiver vai retirar desmarcar ele
 let escolhas_jg = []
@@ -35,12 +42,22 @@ function escolha(nome){
   }
   alert(escolhas_jg)
   if (escolhas_jg.length > 2){
-    maquina()
+    for (const chave in heroisMarvel) {
+        if (!escolhas_jg.includes(chave)) { // Verifica se o membro não está nas chaves do dicionário
+          document.getElementById(chave).style.display = 'none';
+        }
+        else {
+          document.getElementById(chave).removeAttribute('onclick'); // Remove o atributo onclick
+          document.getElementById("sub_titulo").innerHTML = `<h4>Combate entre Heróis e Vilões Marvel<h4>`;
+          document.getElementById("vs").style.display = "block";
+        }
+      }
+      maquina()
+    }
   }
-}
 
 let escolhas_maquina = []
-function maquina(){
+async function maquina(){
   const chaves = Object.keys(viloesMarvel); // Pegando chaves do dicionário js
   
   while (escolhas_maquina.length < 3){
@@ -53,11 +70,34 @@ function maquina(){
       escolhas_maquina.push(chaves[sorteio])
     }
   }
-  alert(escolhas_maquina)
+  document.getElementById("viloes").style.display = "flex"
+  document.getElementById("viloes").style.justifyContent = "center"
+  for (const chave in viloesMarvel) {
+    if (escolhas_maquina.includes(chave)) { // Verifica se o membro não está nas chaves do dicionário
+      document.getElementById(chave).style.display = 'block';
+    }
+  }
+  await sleep(5000)
+  // Limpando para aparece apenas os vencedores
+  document.getElementById("viloes").style.display = "none"
+  document.getElementById("herois").style.display = "none"
+  document.getElementById("vs").style.display = "none";
+  calular()
 }
 
 // Calcular a força de cada jogador, e depois somar pra saber a força geral do time
+function calular(){
+  // Calucando a força dos heróis
+  let forca_herois = 0
+  for (const item of escolhas_jg){
+    forca_herois += heroisMarvel[item]
+  }
 
+  let forca_viloes = 0
+  for (const item of escolhas_maquina){
+    forca_viloes += viloesMarvel[item]
+  }
+}
 // Calcular a força de cada jogador do time do computador
 
 // Comparar os dois times para saber quem ganhou!

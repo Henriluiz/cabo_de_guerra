@@ -18,7 +18,7 @@ body {
 
 /* Container with the background image */
 .container {
-  background: url('./imgs/fundo.png') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./imgs/fundo2.jpg') no-repeat center center/cover;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -39,6 +39,10 @@ body {
   margin-bottom: 20px;
 }
 
+figcaption {
+  font-size: 0.1rem;
+}
+
 .jogo {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -48,16 +52,13 @@ body {
   flex-direction: column;
 }
 
-.jogadores, .jogadores_vi {
+.jogadores, .viloes {
   display: flex;
   justify-content: center;
   cursor: pointer;
 }
-.jogadores_vi {
-  display: none;
-}
 
-.jogador, .vilao {
+.hr_aranha, .hr_capitao, .hr_ferro, .hr_hulk, .hr_thor, .vl_caveira, .vl_chicote, .vl_fantasma, .vl_soldado, .vl_thanos, .vl_ultron {
   margin-inline: 1rem;
   img {
       width: 6rem;
@@ -67,18 +68,6 @@ body {
 
 
 /* Reutilização de código anterior */
-.imagem-clicavel {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.imagem-clicavel:active {
-  transform: translateY(4px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  filter: brightness(0.97);
-}
-
 .imagem-clicavel {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;

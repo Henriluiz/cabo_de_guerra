@@ -17,51 +17,52 @@
         
           <main class="conteudo-jogo">
             <div id="container" class="interface">
-              <h2>Escolha 3 jogadores para seu time:</h2>
+              <h2 id="sub_titulo">Escolha 3 heróis para seu time:</h2>
               <div id="herois" class="jogadores">
-                <div class="jogador" onclick="escolha('Capitão América')">
+                <div class="hr_capitao" id="Capitão América" onclick="escolha('Capitão América')">
                   <img src="css/imgs/herois/capitao_america.jpeg" alt="Capitão America" class="imagem-clicavel" alt="Imagem clicável">
                   <figcaption>Capitão América</figcaption>
                 </div>
-                <div class="jogador" onclick="escolha('Homem Aranha')">
+                <div class="hr_aranha" id="Homem Aranha" onclick="escolha('Homem Aranha')">
                   <img src="css/imgs/herois/homem_aranha.jpg" alt="Homem Aranha" class="imagem-clicavel" alt="Imagem clicável">
                   <figcaption>Homem Aranha</figcaption>
                 </div>
-                <div class="jogador" onclick="escolha('Homem de Ferro')">
+                <div class="hr_ferro" id="Homem de Ferro" onclick="escolha('Homem de Ferro')">
                   <img src="css/imgs/herois/homem_ferro.jpeg" alt="Homem de Ferro" class="imagem-clicavel" alt="Imagem clicável">
                   <figcaption>Homem de Ferro</figcaption>
                 </div>
-                <div class="jogador" onclick="escolha('Hulk')">
+                <div class="hr_hulk" id="Hulk" onclick="escolha('Hulk')">
                   <img src="css/imgs/herois/hulk.jpeg" alt="Hulk" class="imagem-clicavel" alt="Imagem clicável">
                   <figcaption>Hulk</figcaption>
                 </div>
-                <div class="jogador" onclick="escolha('Thor')">
+                <div class="hr_thor" id="Thor" onclick="escolha('Thor')">
                   <img src="css/imgs/herois/Thor-Ragnarok.jpg" alt="Thor" class="imagem-clicavel" alt="Imagem clicável">
                   <figcaption>Thor</figcaption>
                 </div>
               </div>
-              <div id="viloes" class="jogadores_vi">
-                <div class="vilao">
+              <p id="vs" style="display: none; font-size: 1.5rem;">🆚</p>
+              <div id="viloes" style="display: none;">
+                <div class="vl_caveira" id="Caveira Vermelha" style="display: none;">
                   <img src="css/imgs/viloes/caveira_vermelha.jpeg" alt="Caveira Vermelha">
                   <figcaption>Caveira Vermelha</figcaption>
                 </div>
-                <div class="vilao">
+                <div class="vl_chicote" id="Chicote Negro" style="display: none;">
                   <img src="css/imgs/viloes/chicote_negro.jpg" alt="Chicote Negro">
                   <figcaption>Chicote Negro</figcaption>
                 </div>
-                <div class="vilao">
+                <div class="vl_fantasma" id="Fantasmas" style="display: none;">
                   <img src="css/imgs/viloes/fantasma.jpeg" alt="Fantasma">
                   <figcaption>Fantasma</figcaption>
                 </div>
-                <div class="vilao">
+                <div class="vl_soldado" id="Soldado Invernal" style="display: none;">
                   <img src="css/imgs/viloes/soldado_invernal.jpg" alt="Soldado Invernal">
                   <figcaption>Soldado Invernal</figcaption>
                 </div>
-                <div class="vilao">
+                <div class="vl_thanos" id="Thanos" style="display: none;">
                   <img src="css/imgs/viloes/thanos.jpg" alt="Thanos">
                   <figcaption>Thanos</figcaption>
                 </div>
-                <div class="vilao">
+                <div class="vl_ultron" id="Ultron" style="display: none;">
                   <img src="css/imgs/viloes/ultron.jpeg" alt="Ultron">
                   <figcaption>Ultron</figcaption>
                 </div>
