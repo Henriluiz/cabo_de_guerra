@@ -13,8 +13,7 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  max-width: 150px;
-  width: auto;
+  width: 15%;
 }
 
 /* Container with the background image */
@@ -24,10 +23,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /* Content div for text and button */
-.content {
+.conteudo-jogo {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 40px;
@@ -47,17 +47,36 @@ body {
   border: 0.1px solid cyan;
   flex-direction: column;
 }
-.opcoes {
+
+.jogadores, .jogadores_vi {
   display: flex;
   justify-content: center;
   cursor: pointer;
 }
+.jogadores_vi {
+  display: none;
+}
 
-.opcao {
+.jogador, .vilao {
   margin-inline: 1rem;
   img {
-      width: 7rem;
+      width: 6rem;
+      height: 5rem;
   }
+}
+
+
+/* Reutilização de código anterior */
+.imagem-clicavel {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-clicavel:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  filter: brightness(0.97);
 }
 
 .imagem-clicavel {
@@ -93,13 +112,39 @@ button:hover {
   background-color: #1ABC9C;
 }
 
-/* Footer Styles */
-footer {
+/* Footer Styles */ 
+footer { display: flex;
+   align-items: center;/* Centraliza verticalmente */ 
+   padding: 0.1rem; /* Espaçamento interno padrão */ 
+   background-color: black; gap: 1rem; /* Espaço entre os elementos */
+}
+.logoalura { 
+  flex: 0 1 auto; /* Permite encolher, mas não crescer */ 
+  max-width: 15%; /* Limita a largura máxima */ 
+  margin-left: 21%;
+} 
+.logoalura img { 
+  width: 100%; /* Imagem ocupa 100% do container */
+  height: auto; /* Mantém a proporção */
+  display: block; /* Remove espaços indesejados */
+  cursor: pointer;
+} 
+.texto {
   text-align: center;
-  padding: 10px;
+  padding: 0 1rem; /* Espaçamento interno lateral */ 
+}
+.linkedin {
+  margin-left: 0.7rem;
+  flex-shrink: 0; /* Impede que o ícone encolha */
+  width: 3%; /* Tamanho fixo para o ícone */   
+} 
+.linkedin img {
+  width: 100%; 
+  height: auto; 
+  cursor: pointer; 
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 400px){
   .content {
       width: 9rem;
   }
@@ -117,4 +162,18 @@ footer {
           margin: 0.5rem 1rem 0px 1rem
       }
    }
+   footer {
+    gap: 0.1rem;
+    .texto {
+      align-self: flex-end;
+      font-size: 0.1rem;
+    }
+    .logoalura {
+      margin-left: 0%;
+      width: 10;
+    }
+    .linkedin { 
+    margin-left: 0rem; 
+    } 
+  }
 }

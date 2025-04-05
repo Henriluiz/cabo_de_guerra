@@ -4,29 +4,86 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
-        <script defer src="./js/vidro.js"></script>
-        <title>Document</title>
+        <script defer src="./js/cabo.js"></script>
+        <title>Cabo de Guerra Marvel</title>
     </head>
     <body>
-        <div class="logo">
-          <img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo da Imersão Dev" />
+      <img class="logo" src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo da Imersão Dev">
+
+        <div class="container">
+          <div class="titulo">
+            <h2>Força ou Queda</h2>
+          </div>
+        
+          <main class="conteudo-jogo">
+            <div id="container" class="interface">
+              <h2>Escolha 3 jogadores para seu time:</h2>
+              <div id="herois" class="jogadores">
+                <div class="jogador" onclick="escolha('Capitão América')">
+                  <img src="css/imgs/herois/capitao_america.jpeg" alt="Capitão America" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Capitão América</figcaption>
+                </div>
+                <div class="jogador" onclick="escolha('Homem Aranha')">
+                  <img src="css/imgs/herois/homem_aranha.jpg" alt="Homem Aranha" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Homem Aranha</figcaption>
+                </div>
+                <div class="jogador" onclick="escolha('Homem de Ferro')">
+                  <img src="css/imgs/herois/homem_ferro.jpeg" alt="Homem de Ferro" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Homem de Ferro</figcaption>
+                </div>
+                <div class="jogador" onclick="escolha('Hulk')">
+                  <img src="css/imgs/herois/hulk.jpeg" alt="Hulk" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Hulk</figcaption>
+                </div>
+                <div class="jogador" onclick="escolha('Thor')">
+                  <img src="css/imgs/herois/Thor-Ragnarok.jpg" alt="Thor" class="imagem-clicavel" alt="Imagem clicável">
+                  <figcaption>Thor</figcaption>
+                </div>
+              </div>
+              <div id="viloes" class="jogadores_vi">
+                <div class="vilao">
+                  <img src="css/imgs/viloes/caveira_vermelha.jpeg" alt="Caveira Vermelha">
+                  <figcaption>Caveira Vermelha</figcaption>
+                </div>
+                <div class="vilao">
+                  <img src="css/imgs/viloes/chicote_negro.jpg" alt="Chicote Negro">
+                  <figcaption>Chicote Negro</figcaption>
+                </div>
+                <div class="vilao">
+                  <img src="css/imgs/viloes/fantasma.jpeg" alt="Fantasma">
+                  <figcaption>Fantasma</figcaption>
+                </div>
+                <div class="vilao">
+                  <img src="css/imgs/viloes/soldado_invernal.jpg" alt="Soldado Invernal">
+                  <figcaption>Soldado Invernal</figcaption>
+                </div>
+                <div class="vilao">
+                  <img src="css/imgs/viloes/thanos.jpg" alt="Thanos">
+                  <figcaption>Thanos</figcaption>
+                </div>
+                <div class="vilao">
+                  <img src="css/imgs/viloes/ultron.jpeg" alt="Ultron">
+                  <figcaption>Ultron</figcaption>
+                </div>
+              </div>
+
+              <p id="informacoesJogador" class="resultado"></p>
+              <p id="informacoesComputador" class="resultado"></p>
+              <button id="resultadoBtn" style="display:none;">Ver Resultado</button>
+              <h1 id="resultadoFinal" class="resultado"></h1>
+          </main>
         </div>
-      
-        <div class="titulo">
-          <h2>Força ou Queda</h2>
-        </div>
-      
-        <main class="conteudo-jogo">
-          <div id="container">
-            <h2>Escolha 3 jogadores para seu time:</h2>
-      
-            <p id="informacoesJogador" class="resultado"></p>
-            <p id="informacoesComputador" class="resultado"></p>
-            <button id="resultadoBtn" style="display:none;">Ver Resultado</button>
-            <h1 id="resultadoFinal" class="resultado"></h1>
-        </main>
-      
-        <footer>Luiz Azevedo - Imersão DEV - 2025</footer>
+        <footer>
+          <div onclick="abrirSite('https://imersao.dev/')" class="logoalura">
+            <img src="./css/imgs/pe_pagina-removebg-preview.png" alt="Logo Alura">
+          </div>
+          <div class="texto">
+            <p>Luiz Azevedo - Imersão DEV - 2025</p> 
+          </div> 
+          <div onclick="abrirSite('https://www.linkedin.com/in/luiz-azevedo-596092356/')" class="linkedin">
+            <img src="./css/imgs/linkedin_logo.png" alt="LinkedIn Logo">
+          </div>
+        </footer>
     </body>
 </html>
   
