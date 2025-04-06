@@ -29,3 +29,9 @@ Vence quem tiver a **maior força total** ao somar os atributos de cada equipe!
 
 ## 🚀 Link
 [Venha Jogar!](https://henriluiz.github.io/cabo_de_guerra/ "Combate Épica Marvel!")
+
+---
+## 📸 Captura de Tela
+![Preview do seletor de heróis!](./imgs/Captura de tela.png)
+
+---
