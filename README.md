@@ -1,4 +1,4 @@
-# 🦸♂️🦹♀️ Marvel: Heroes vs. Villains Showdown 🦹♂️🦸♀️
+# 🦸♂️🦹♀️ Marvel: Heroes vs. Villains 🦹♂️🦸♀️
 
 **Bem-vindo ao "Marvel: Heroes vs. Villains Showdown"!**  
 Um projeto interativo onde você monta um time de **heróis da Marvel** e enfrenta um time de **vilões icônicos** controlado pela máquina.  
@@ -28,3 +28,4 @@ Vence quem tiver a **maior força total** ao somar os atributos de cada equipe!
 ---
 
 ## 🚀 Link
+[Venha Jogar!](https://henriluiz.github.io/cabo_de_guerra/ "Combate Épica Marvel!")
