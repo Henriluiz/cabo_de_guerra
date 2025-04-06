@@ -1,7 +1,7 @@
-# 🦸♂️🦹♀️ Marvel: Heroes vs. Villains 🦹♂️🦸♀️
+# 🦸♂️🦹♀️ Marvel: Heróis vs. Vilões 🦹♂️🦸♀️
 
-**Bem-vindo ao "Marvel: Heroes vs. Villains Showdown"!**  
-Um projeto interativo onde você monta um time de **heróis da Marvel** e enfrenta um time de **vilões icônicos** controlado pela máquina.  
+**Bem-vindo ao "Marvel: Heróis vs. Vilões"!**  
+Um projeto interativo onde você monta um time de **Heróis da Marvel** e enfrenta um time de **Vilões icônicos** controlado pela máquina.  
 O objetivo é simples: **escolher 3 heróis** entre 5 opções aleatórias (dentre 15 disponíveis) e desafiar a máquina, que escolherá **3 vilões** de um total de 13.  
 Vence quem tiver a **maior força total** ao somar os atributos de cada equipe!
 
