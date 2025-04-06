@@ -36,3 +36,10 @@ Vence quem tiver a **maior força total** ao somar os atributos de cada equipe!
 ![Preview do seletor de heróis!](./css/imgs/capturadetela.png)
 
 ---
+
+## ⚠️ Aviso Legal
+
+Este projeto é não oficial e foi criado para fins educacionais. Todos os personagens são propriedade da Marvel Entertainment.
+
+---
+Feito com ❤️ por (https://github.com/Henriluiz).
