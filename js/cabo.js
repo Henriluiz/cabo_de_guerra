@@ -10,7 +10,7 @@ const heroisMarvel = {
   "Capitão América": 820,
   "Homem de Ferro": 890,
   "Hulk": 990,
-  "Thor": 990,
+  "Thor": 1000,
   "Pantera Negra": 860,
   "Jessica Jones": 780,
   "Gavião Arqueiro": 730,
