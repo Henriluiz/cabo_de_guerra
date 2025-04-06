@@ -33,6 +33,6 @@ Vence quem tiver a **maior força total** ao somar os atributos de cada equipe!
 ---
 ## 📸 Captura de Tela
 
-[Preview do seletor de heróis!](./imgs/Captura de tela.png)
+[Preview do seletor de heróis!](./css/imgs/capturadetela.png)
 
 ---
