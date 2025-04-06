@@ -11,6 +11,11 @@ Vence quem tiver a **maior força total** ao somar os atributos de cada equipe!
 ![Preview do seletor de heróis!](./css/imgs/capturadetela.png)
 ---
 
+## 🚀 Link
+[Venha Jogar!](https://henriluiz.github.io/cabo_de_guerra/ "Combate Épica Marvel!")
+
+---
+
 ## ✨ Funcionalidades
 
 - **Heróis e Vilões da Marvel**: Personagens autênticos do universo Marvel.
@@ -31,10 +36,6 @@ Vence quem tiver a **maior força total** ao somar os atributos de cada equipe!
   <img align="center" alt="JavaScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 </div>
 
----
-
-## 🚀 Link
-[Venha Jogar!](https://henriluiz.github.io/cabo_de_guerra/ "Combate Épica Marvel!")
 
 ---
 
