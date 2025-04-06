@@ -6,6 +6,10 @@ O objetivo é simples: **escolher 3 heróis** entre 5 opções aleatórias (dent
 Vence quem tiver a **maior força total** ao somar os atributos de cada equipe!
 
 ---
+## 📸 Captura de Tela
+
+![Preview do seletor de heróis!](./css/imgs/capturadetela.png)
+---
 
 ## ✨ Funcionalidades
 
@@ -20,20 +24,17 @@ Vence quem tiver a **maior força total** ao somar os atributos de cada equipe!
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5**: Estrutura do site.
-- **CSS3**: Estilização temática (cores e elementos inspirados na Marvel).
-- **JavaScript**: Lógica de seleção aleatória, cálculo de força e interatividade.
-- **GitHub Pages**: Hospedagem do projeto.
+🖥️ Tecnologias
+<div style="display: inline_block">
+  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="JavaScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+</div>
 
 ---
 
 ## 🚀 Link
 [Venha Jogar!](https://henriluiz.github.io/cabo_de_guerra/ "Combate Épica Marvel!")
-
----
-## 📸 Captura de Tela
-
-![Preview do seletor de heróis!](./css/imgs/capturadetela.png)
 
 ---
 
@@ -42,4 +43,5 @@ Vence quem tiver a **maior força total** ao somar os atributos de cada equipe!
 Este projeto é não oficial e foi criado para fins educacionais. Todos os personagens são propriedade da Marvel Entertainment.
 
 ---
+
 Feito com ❤️ por [Luiz Azevedo](https://github.com/Henriluiz).
