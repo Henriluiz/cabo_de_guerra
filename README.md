@@ -42,4 +42,4 @@ Vence quem tiver a **maior força total** ao somar os atributos de cada equipe!
 Este projeto é não oficial e foi criado para fins educacionais. Todos os personagens são propriedade da Marvel Entertainment.
 
 ---
-Feito com ❤️ por (https://github.com/Henriluiz).
+Feito com ❤️ por [Luiz Azevedo](https://github.com/Henriluiz).
